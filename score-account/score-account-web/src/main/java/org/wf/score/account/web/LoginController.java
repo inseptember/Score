@@ -21,4 +21,10 @@ public class LoginController {
 		return "login";
 	}
 	
+	@RequestMapping(value = "/login/check", method = RequestMethod.POST)
+	public String check() {
+			
+		return "account/users";
+	}
+	
 }
