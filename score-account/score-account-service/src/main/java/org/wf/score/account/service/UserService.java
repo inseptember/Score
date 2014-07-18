@@ -44,6 +44,11 @@ public class UserService {
 		return user;
 	}
 	
+	public List<User> getUsers(){
+		List<User> users = userDao.list();
+		return users;
+	}
+	
 	@Autowired(required = false)
 	public void setMemcachedClient(SpyMemcachedClient memcachedClient) {
 		this.memcachedClient = memcachedClient;

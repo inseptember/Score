@@ -6,5 +6,5 @@
 
 <c:set var="global_url" value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/"/>
 <c:set var="global_css_url" value="${pageContext.request.contextPath}/WEB-INF/css"/>
-<c:set var="global_js_url" value="${pageContext.request.contextPath}/static"/>
+<c:set var="global_lib_url" value="${pageContext.request.contextPath}/static"/>
 <c:set var="global_image_url" value="${pageContext.request.contextPath}/WEB-INF/image"/>

@@ -3,6 +3,7 @@ package org.wf.score.account.entity;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.wf.core.dao.entity.BaseEntity;
@@ -12,6 +13,9 @@ import org.wf.core.dao.entity.BaseEntity;
 public class User extends BaseEntity implements Serializable  {
 
 	private static final long serialVersionUID = 3117962409520767344L;
+	
+	@Id
+	private Integer id;
 	
 	private String name;
 	
@@ -61,6 +65,14 @@ public class User extends BaseEntity implements Serializable  {
 
 	public void setIsDisabled(Boolean isDisabled) {
 		this.isDisabled = isDisabled;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 }
